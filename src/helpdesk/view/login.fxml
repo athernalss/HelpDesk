@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="helpdesk.controller.LoginController">
    <columnConstraints>
@@ -9,4 +11,20 @@
    <rowConstraints>
       <RowConstraints />
    </rowConstraints>
+   <children>
+      <Pane prefHeight="238.0" prefWidth="318.0">
+         <children>
+            <Label alignment="CENTER" layoutX="7.0" layoutY="-11.0" prefHeight="94.0" prefWidth="304.0" text="Helpdesk" textAlignment="CENTER" textFill="#4a4a4a">
+               <font>
+                  <Font size="27.0" />
+               </font></Label>
+            <Label layoutX="39.0" layoutY="87.0" text="Username" />
+            <Label layoutX="41.0" layoutY="123.0" text="Password" />
+            <Label fx:id="login_error" alignment="CENTER" layoutY="152.0" prefHeight="40.0" prefWidth="318.0" textAlignment="CENTER" textFill="#ff3f3f" />
+            <TextField fx:id="username" layoutX="121.0" layoutY="83.0" />
+            <PasswordField fx:id="password" layoutX="121.0" layoutY="119.0" />
+            <Button fx:id="login_button" layoutX="136.0" layoutY="199.0" mnemonicParsing="false" onAction="#onLoginButtonClick" text="Login" />
+         </children>
+      </Pane>
+   </children>
 </GridPane>
